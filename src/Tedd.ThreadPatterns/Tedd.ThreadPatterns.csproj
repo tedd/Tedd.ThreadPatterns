@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <LangVersion>latest</LangVersion>
+	  <Authors>tedd</Authors>
+	  <Copyright>Tedd Hansen</Copyright>
+	  <RepositoryType>git</RepositoryType>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	  <EnableNETAnalyzers>True</EnableNETAnalyzers>
+	  <AnalysisLevel>latest-all</AnalysisLevel>
+	  <PackageProjectUrl>https://github.com/tedd/Tedd.ThreadPatterns</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/tedd/Tedd.ThreadPatterns.git</RepositoryUrl>
+	  <PackageTags>ThreadLoop;ThreadAction</PackageTags>
+	  <PackageReleaseNotes>Namespace fix</PackageReleaseNotes>
+	  <Version>0.0.2</Version>
+
+  </PropertyGroup>
+	
+	<ItemGroup>
+		<None Include="..\..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+	</ItemGroup>
+
+</Project>
